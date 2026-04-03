@@ -42,8 +42,58 @@
     .interactive{display:grid;grid-template-columns:1fr 1fr;gap:14px}.screen{min-height:250px;border-radius:18px;background:#05101d;border:1px solid rgba(255,255,255,.08);padding:16px;font-family:Consolas,Menlo,monospace;color:#dff4ff;overflow:auto;line-height:1.65;margin-bottom:12px}.input,.textarea,.terminal-input{width:100%;padding:14px 16px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);color:var(--text);font:inherit;outline:none}.textarea{min-height:130px;resize:vertical}.form{display:grid;gap:12px}.footer{text-align:center;color:var(--muted);padding:12px 6px 28px;line-height:1.8}
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)} .hidden{display:none!important}
     @media (max-width:1100px){.hero,.two-col,.interactive{grid-template-columns:1fr}.projects{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:860px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:rgba(8,18,33,.96);border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.hero,.points,.skills,.projects,.stats{grid-template-columns:1fr}.nav-links a,.nav-links .btn{text-align:center}}
-    @media (max-width:640px){.app{padding:14px}.hero-main,.hero-side,.section{padding:20px}h2{font-size:2.2rem}}
+    @media (max-width:860px){
+      .menu-btn{display:block}
+      .nav{padding:12px 14px;border-radius:18px}
+      .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:rgba(8,18,33,.98);border:1px solid var(--line);border-radius:20px;padding:12px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:8px}
+      .nav-links.open{display:flex}
+      .hero,.points,.skills,.projects,.stats{grid-template-columns:1fr}
+      .nav-links a,.nav-links .btn{text-align:center;padding:12px 14px;border-radius:14px}
+      .brand h1{font-size:.95rem}
+      .brand p{font-size:.8rem}
+      .hero-main{padding:24px}
+      .hero-side{padding:18px}
+      .actions{gap:10px}
+      .actions .btn,.actions a.btn{width:100%;justify-content:center;text-align:center}
+      .point,.skill,.project,.item,.tool,.terminal,.contact,.stat{border-radius:18px}
+      .meta div{padding:12px 14px}
+      .projects .actions .btn{width:100%}
+      .interactive,.two-col{grid-template-columns:1fr}
+      .screen{min-height:220px}
+    }.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:rgba(8,18,33,.96);border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.hero,.points,.skills,.projects,.stats{grid-template-columns:1fr}.nav-links a,.nav-links .btn{text-align:center}}
+    @media (max-width:640px){
+      .app{padding:10px}
+      .nav{top:10px;margin-bottom:14px}
+      .logo{width:42px;height:42px;border-radius:14px;font-size:.9rem}
+      .menu-btn{width:42px;height:42px}
+      .hero-main,.hero-side,.section{padding:16px}
+      h2{font-size:1.9rem;line-height:1.02;margin-bottom:12px}
+      .tag{font-size:.8rem;padding:8px 12px;margin-bottom:14px}
+      .hero p,.section p,.project p,.profile p,.status p,.skill p,.feedback{font-size:.94rem;line-height:1.7}
+      .actions{margin:16px 0 18px}
+      .btn,.nav-links a,.nav-links .btn{font-size:.95rem}
+      .avatar{width:72px;height:72px;border-radius:20px;font-size:1.35rem;margin-bottom:12px}
+      .profile h3{font-size:1.15rem!important}
+      .meta{gap:8px}
+      .meta div{font-size:.9rem;align-items:center}
+      .stats{gap:10px;margin-bottom:14px}
+      .stat{padding:16px}
+      .num{font-size:1.9rem}
+      .section{margin-bottom:14px}
+      .head{margin-bottom:14px}
+      .head .chip{width:100%;text-align:center}
+      .skills,.projects,.timeline,.interactive,.two-col{gap:10px}
+      .skill-top h4,.project h4,.item h4{font-size:1rem}
+      .project,.skill,.item,.tool,.terminal,.contact{padding:16px}
+      .top{flex-direction:column;align-items:flex-start}
+      .badge{font-size:.75rem}
+      .stack{gap:6px}
+      .stack span{font-size:.78rem;padding:6px 8px}
+      .screen{min-height:200px;padding:12px;font-size:.85rem;border-radius:14px}
+      .input,.textarea,.terminal-input{padding:12px 14px;border-radius:14px;font-size:.95rem}
+      .textarea{min-height:110px}
+      .footer{padding:8px 4px 22px;font-size:.9rem}
+    }.hero-main,.hero-side,.section{padding:20px}h2{font-size:2.2rem}}
   </style>
 </head>
 <body>
@@ -179,7 +229,7 @@
       </div>
     </section>
 
-    <footer class="footer reveal"><strong>Bastiaan de Jonge</strong> · Full Stack Developer · Content Creator · IGN: <strong>ItzCritsLow</strong></footer>
+    <footer class="footer reveal">Built as an interactive one-file portfolio app for <strong>Bastiaan de Jonge</strong> · Full Stack Developer · Content Creator · IGN: <strong>ItzCritsLow</strong></footer>
   </div>
   <div id="modalRoot"></div>
 
